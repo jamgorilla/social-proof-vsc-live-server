@@ -1,0 +1,237 @@
+
+
+header{
+    font-family: 'Spartan';
+    font-weight: bold;
+    color: var(--VDarkMagenta);
+}
+h1, figure, section{
+    margin: 0;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root{
+    --VDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink : hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --CustomWhite: hsl(0, 0%, 100%);
+}
+
+/* Weights: 400, 500, 700 */
+@font-face {
+    font-family: 'Spartan';
+    src: url('/fonts/Spartan-Regular.ttf') format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Spartan';
+    src: url('/fonts/Spartan-Bold.ttf') format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Spartan';
+    src: url('/fonts/Spartan-Medium.ttf') format("truetype");
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Spartan';
+    src: url('/fonts/Spartan-Light.ttf') format("truetype");
+    font-weight: lighter;
+}
+
+
+body{
+    font-family: 'Spartan';
+    font-size: 15px;
+    background-color: var(--CustomWhite);
+}
+
+content{
+    color: var(--VDarkMagenta);
+}
+
+figure{
+    background-color: var(--LightGrayishMagenta);
+    display: flex;
+    border-radius: 15px;
+}
+
+h3{
+    font-family: 'Spartan';
+    font-weight: bold;
+    color: var(--VDarkMagenta);
+    font-size: 13px;
+}
+section{
+    margin: 0px 20px;
+}
+.testimonial-container{
+    background-color: var(--VDarkMagenta);
+    border-radius: 10px;
+
+}
+.header-testimonial{
+    display: flex;
+    align-items: center;
+   
+}
+.header-testimonial > attribution{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.header-testimonial > img{
+    border-radius: 50%;
+}
+attribution > author{
+    font-weight: bold;
+    color: var(--CustomWhite);
+}
+label{
+    font-weight: normal;
+    color: var(--SoftPink);
+
+}
+cite{
+    font-weight: medium;
+    color: var(--CustomWhite);
+    padding: 0px 30px 50px 30px;
+    display: flex;
+    font-style: normal;
+}
+.attribution{
+    visibility: hidden;
+}
+.star{
+    height: 15px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+/* Desktop */
+@media screen and (max-width: 1440px) {
+    .top-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .top-header-and-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: 1px solid green;
+    }
+    .top-star-section{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: 1px solid red;
+    }
+    h3{
+        font-size: 10px;
+        white-space: nowrap;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .top-star-section:nth-child(0){
+        display: flex;
+        align-items: start;
+    }
+    .top-star-section:nth-child(1){
+        display: flex;
+        align-items: center;
+    }
+    .top-star-section:nth-child(2){
+        display: flex;
+        flex: end;
+    }
+    .star-container{
+        display:flex;
+        flex-direction: row;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    figure{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 20px 20px;
+        padding: 5px 0px 5px 0px;
+        width: 300px;
+    }
+
+    
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/* Mobile */
+@media screen and (max-width: 375px) {
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-header-and-content{
+        width: 100%;
+    }
+    content {
+        display: flex;
+        text-align: center;
+        margin: 0px 15px 30px 15px;
+    }
+    .top-star-section{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        width: 100%;
+        border: 1px solid red;
+    }
+    h3{
+        font-size: 15px;
+        
+    }
+    section{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-container{
+        margin-bottom: 20px;
+    }
+    .header-testimonial > img{
+        height: 40px;
+    }
+    header{
+        font-family: 'Spartan';
+        font-weight: bold;
+        color: var(--VDarkMagenta);
+        display: flex;
+        text-align: center;
+        margin: 20px 50px 30px 50px;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin: 0px 20px 20px 20px;
+        padding: 5px 0px 5px 0px;
+        width: 88%;
+    }
+    img{
+        padding-top: 10px;
+    } 
+}
+    
